@@ -1,0 +1,6 @@
+x = [1 2 3 4 5];
+y = [2 5 7 10 14];
+a = polyfit(x,y,1);
+xdash = linspace(-10,10,100);
+ydash = polyval(a,xdash);
+plot(xdash,ydash,x,y,'ro')
